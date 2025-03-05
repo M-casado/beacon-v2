@@ -10,20 +10,6 @@
                         "$ref": "../common/commonDefinitions.json#/$defs/Sex"
                     },
                     "type": "array"
-                },
-                "locations": {
-                    "description": "Geographic location(s) in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/commonDefinitions.json#/$defs/GeographicLocation"
-                    },
-                    "type": "array"
-                },
-                "phenotypicConditions": {
-                    "description": "Phenotypic condition(s) in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/phenotypicFeature.json"
-                    },
-                    "type": "array"
                 }
             },
             "type": "object"
