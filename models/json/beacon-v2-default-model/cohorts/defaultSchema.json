@@ -3,6 +3,29 @@
     "$defs": {
         "CohortCriteria": {
             "description": "Criteria used for defining the cohort. It is assumed that all cohort participants will match or NOT match such criteria.",
+            "properties": {
+                "genders": {
+                    "description": "Gender(s) in cohort inclusion criteria",
+                    "items": {
+                        "$ref": "../common/commonDefinitions.json#/$defs/Sex"
+                    },
+                    "type": "array"
+                },
+                "locations": {
+                    "description": "Geographic location(s) in cohort inclusion criteria",
+                    "items": {
+                        "$ref": "../common/commonDefinitions.json#/$defs/GeographicLocation"
+                    },
+                    "type": "array"
+                },
+                "phenotypicConditions": {
+                    "description": "Phenotypic condition(s) in cohort inclusion criteria",
+                    "items": {
+                        "$ref": "../common/phenotypicFeature.json"
+                    },
+                    "type": "array"
+                }
+            },
             "type": "object"
         },
         "CollectionEvent": {
