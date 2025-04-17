@@ -1,25 +1,26 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "additionalProperties": true,
-    "description": "Definition of a quantity class. Provenance: GA4GH Phenopackets v2 `Quantity`",
-    "properties": {
-        "referenceRange": {
-            "$ref": "./referenceRange.json",
-            "description": "The normal range for the value",
-            "example": {}
-        },
-        "unit": {
-            "$ref": "./commonDefinitions.json#/$defs/Unit"
-        },
-        "value": {
-            "description": "The value of the quantity in the units",
-            "type": "number"
-        }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Definition of a quantity class. Provenance: GA4GH Phenopackets v2 `Quantity`",
+  "properties": {
+    "referenceRange": {
+      "$ref": "./referenceRange.json",
+      "description": "The normal range for the value",
+      "example": {}
     },
-    "required": [
-        "unit",
-        "value"
-    ],
-    "title": "Quantity",
-    "type": "object"
+    "unit": {
+      "$ref": "./commonDefinitions.json#/$defs/Unit"
+    },
+    "value": {
+      "description": "The value of the quantity in the units",
+      "type": "number"
+    }
+  },
+  "required": [
+    "unit",
+    "value"
+  ],
+  "title": "Quantity",
+  "type": "object",
+  "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/test-biovalidator/models/json/beacon-v2-default-model/common/quantity.json"
 }
