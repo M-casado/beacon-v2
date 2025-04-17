@@ -1,49 +1,9 @@
 {
     "$comment": "version: ga4gh-beacon-cohort-v2.0.0",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/test-biovalidator/models/json/beacon-v2-default-model/cohorts/defaultSchema.json",
     "$defs": {
         "CohortCriteria": {
             "description": "Criteria used for defining the cohort. It is assumed that all cohort participants will match or NOT match such criteria.",
-            "properties": {
-                "ageRange": {
-                    "$ref": "../common/ageRange.json",
-                    "description": "Individual age range in cohort inclusion criteria"
-                },
-                "diseaseConditions": {
-                    "description": "Diseases in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/disease.json"
-                    },
-                    "type": "array"
-                },
-                "ethnicities": {
-                    "description": "Ethnias in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/commonDefinitions.json#/$defs/Ethnicity"
-                    },
-                    "type": "array"
-                },
-                "genders": {
-                    "description": "Gender(s) in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/commonDefinitions.json#/$defs/Sex"
-                    },
-                    "type": "array"
-                },
-                "locations": {
-                    "description": "Geographic location(s) in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/commonDefinitions.json#/$defs/GeographicLocation"
-                    },
-                    "type": "array"
-                },
-                "phenotypicConditions": {
-                    "description": "Phenotypic condition(s) in cohort inclusion criteria",
-                    "items": {
-                        "$ref": "../common/phenotypicFeature.json"
-                    },
-                    "type": "array"
-                }
-            },
             "type": "object"
         },
         "CollectionEvent": {

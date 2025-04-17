@@ -148,6 +148,7 @@
         }
     },
     "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/test-biovalidator/models/json/beacon-v2-default-model/common/commonDefinitions.json",
     "description": "Definitions for concepts used in several entry types, but that having only one property are not complex enough to require a full independent schema document.",
     "title": "Common Definitions"
 }
