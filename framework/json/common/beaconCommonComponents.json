@@ -241,5 +241,6 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Definition of relatively simple components used in different points of the Beacon specification, both in requests and responses, therefore not associated exclusively with one or the other. Separate schema documents are provided for complex components.",
     "title": "Beacon Common Components",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/test-biovalidator/framework/json/common/beaconCommonComponents.json",
     "type": "object"
 }

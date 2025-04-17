@@ -15,5 +15,6 @@
         "id"
     ],
     "title": "Ontology Term",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/test-biovalidator/framework/json/common/ontologyTerm.json",
     "type": "object"
 }
