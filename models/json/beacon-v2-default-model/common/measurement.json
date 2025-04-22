@@ -58,5 +58,5 @@
   ],
   "title": "Measurement",
   "type": "object",
-  "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/test-biovalidator/models/json/beacon-v2-default-model/common/measurement.json"
+  "$id": "https://raw.githubusercontent.com/M-Casado/beacon-v2/test-biovalidator/models/json/beacon-v2-default-model/common/measurement.json"
 }
