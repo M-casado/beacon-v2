@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/pedigree.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Pedigree
 description: Pedigree studies in which the individual is part of.
@@ -36,59 +37,59 @@ $defs:
           'Pedigree1001-m1'.
         type: string
         examples:
-          - Pedigree1001-m1
-          - Ind0012122
+        - Pedigree1001-m1
+        - Ind0012122
       role:
         description: Pedigree role, defined as relationship to proband. Value from
           Family Member term (NCIT:C41256), e.g. "proband" (NCIT:C64435),"identical
           twin" (NCIT:C73429), "mother" (NCIT:C25189).
         $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
         examples:
-          - id: NCIT:C64435
-            label: Proband
-          - id: NCIT:C96580
-            label: Biological Mother
-          - id: NCIT:C96572
-            label: Biological Father
-          - id: NCIT:C165848
-            label: Identical Twin Brother
+        - id: NCIT:C64435
+          label: Proband
+        - id: NCIT:C96580
+          label: Biological Mother
+        - id: NCIT:C96572
+          label: Biological Father
+        - id: NCIT:C165848
+          label: Identical Twin Brother
       affected:
         description: Is the individual affected by the disease in the pedigree?
         type: boolean
     examples:
-      - membersInProband:
-          - memberId: Ind0012122
-            role:
-              id: NCIT:C64435
-              label: Proband
-            affected: true
-          - memberId: Pedigree1001-m2
-            role:
-              id: NCIT:C96580
-              label: Biological Mother
-            affected: false
-          - memberId: Pedigree1001-m3
-            role:
-              id: NCIT:C96572
-              label: Biological Father
-            affected: true
-      - membersInMother:
-          - memberId: Ind0028989
-            role:
-              id: NCIT:C96580
-              label: Biological Mother
-            affected: false
-          - memberId: Ind0012122
-            role:
-              id: NCIT:C64435
-              label: Proband
-            affected: true
+    - membersInProband:
+      - memberId: Ind0012122
+        role:
+          id: NCIT:C64435
+          label: Proband
+        affected: true
+      - memberId: Pedigree1001-m2
+        role:
+          id: NCIT:C96580
+          label: Biological Mother
+        affected: false
+      - memberId: Pedigree1001-m3
+        role:
+          id: NCIT:C96572
+          label: Biological Father
+        affected: true
+    - membersInMother:
+      - memberId: Ind0028989
+        role:
+          id: NCIT:C96580
+          label: Biological Mother
+        affected: false
+      - memberId: Ind0012122
+        role:
+          id: NCIT:C64435
+          label: Proband
+        affected: true
     required:
-      - memberId
-      - role
-      - affected
+    - memberId
+    - role
+    - affected
 required:
-  - id
-  - disease
-  - members
+- id
+- disease
+- members
 additionalProperties: true

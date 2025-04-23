@@ -1,6 +1,6 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconInformationalResponseMeta.json
 $schema: https://json-schema.org/draft/2020-12/schema
-description: >-
-  Meta information about the response.
+description: Meta information about the response.
 type: object
 properties:
   beaconId:
@@ -11,7 +11,7 @@ properties:
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/ListOfSchemas
 $comment: 'TO REVIEW: the required properties below results in a warning in the example.'
 required:
-  - beaconId
-  - apiVersion
-  - returnedSchemas
+- beaconId
+- apiVersion
+- returnedSchemas
 additionalProperties: true

@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/individuals/defaultSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Individual
 $comment: 'version: ga4gh-beacon-individual-v2.0.0'
@@ -9,11 +10,9 @@ properties:
     type: string
     example: P0001
   sex:
-    description: >-
-      Sex of the individual. Value from NCIT General Qualifier `NCIT:C27993`:   
-      * `unknown`: not assessed or not availablel `NCIT:C17998`
-      * `female`: `NCIT:C16576`
-      * `male`: `NCIT:C20197`
+    description: 'Sex of the individual. Value from NCIT General Qualifier `NCIT:C27993`:    *
+      `unknown`: not assessed or not availablel `NCIT:C17998` * `female`: `NCIT:C16576`
+      * `male`: `NCIT:C20197`'
     $ref: ../common/commonDefinitions.yaml#/$defs/Sex
   karyotypicSex:
     description: The chromosomal sex of an individual represented from a selection
@@ -64,6 +63,6 @@ properties:
   info:
     $ref: ../common/info.yaml
 required:
-  - id
-  - sex
+- id
+- sex
 additionalProperties: true

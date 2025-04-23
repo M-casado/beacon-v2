@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/genomicVariations/examples/genomicVariant-MIN-VRS-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 variantInternalId: GRCh37-1-55505652-G-A
 variation:

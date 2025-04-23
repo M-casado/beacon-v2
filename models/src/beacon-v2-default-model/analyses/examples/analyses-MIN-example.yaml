@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/analyses/examples/analyses-MIN-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 id: analyses-example-0001
 analysisDate: '2021-10-17'

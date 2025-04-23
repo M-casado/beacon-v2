@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/datasets/examples/dataset-Max-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 id: ds01010101
 name: Dataset with synthetic data
@@ -8,9 +9,9 @@ version: v1.1
 externalUrl: https://example.org/wiki/Main_Page
 dataUseConditions:
   duoDataUse:
-    - id: DUO:0000007
-      label: disease specific research
-      version: 17-07-2016
-      modifiers:
-        - id: EFO:0001645
-          label: coronary artery disease
+  - id: DUO:0000007
+    label: disease specific research
+    version: 17-07-2016
+    modifiers:
+    - id: EFO:0001645
+      label: coronary artery disease
