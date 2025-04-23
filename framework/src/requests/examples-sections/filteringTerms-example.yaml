@@ -1,12 +1,13 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/requests/examples-sections/filteringTerms-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 filters:
-  - id: HP:0002664
-    includeDescendantTerms: true
-    similarity: exact
-    scope: biosamples
-  - id: age
-    operator: '>='
-    value: P70Y
-    scope: individuals
-  - id: demographic.ethnicity:asian
-    scope: cohorts
+- id: HP:0002664
+  includeDescendantTerms: true
+  similarity: exact
+  scope: biosamples
+- id: age
+  operator: '>='
+  value: P70Y
+  scope: individuals
+- id: demographic.ethnicity:asian
+  scope: cohorts

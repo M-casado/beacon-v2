@@ -1,23 +1,24 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "additionalProperties": true,
-    "allOf": [
-        {
-            "$ref": "./elementWithDescription.json"
-        },
-        {
-            "properties": {
-                "ontologyTermForThisType": {
-                    "$ref": "./ontologyTerm.json"
-                }
-            },
-            "required": [
-                "ontologyTermForThisType"
-            ],
-            "type": "object"
+  "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/ontologizedElement.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "$ref": "./elementWithDescription.json"
+    },
+    {
+      "properties": {
+        "ontologyTermForThisType": {
+          "$ref": "./ontologyTerm.json"
         }
-    ],
-    "description": "Definition of the basic element which includes a description and a type defined by an ontology.",
-    "title": "Element with description and a type defined by an ontology",
-    "type": "object"
+      },
+      "required": [
+        "ontologyTermForThisType"
+      ],
+      "type": "object"
+    }
+  ],
+  "description": "Definition of the basic element which includes a description and a type defined by an ontology.",
+  "title": "Element with description and a type defined by an ontology",
+  "type": "object"
 }

@@ -1,7 +1,8 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/value.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Value
 description: 'Definition of a value class. Provenance: GA4GH Phenopackets v2 `Value`'
 type: object
 oneOf:
-  - $ref: ./quantity.yaml
-  - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+- $ref: ./quantity.yaml
+- $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json

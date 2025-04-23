@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/referenceRange.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: ReferenceRange
 description: Definition of a range class.
@@ -7,20 +8,20 @@ properties:
     description: The kind of unit.
     $ref: ./commonDefinitions.yaml#/$defs/Unit
     examples:
-      - id: NCIT:C49670
-        label: Millimeter of Mercury
+    - id: NCIT:C49670
+      label: Millimeter of Mercury
   low:
     description: Lower range end of normal
     type: number
     examples:
-      - 85
+    - 85
   high:
     description: Upper range end of normal
     type: number
     examples:
-      - 135
+    - 135
 required:
-  - unit
-  - low
-  - high
+- unit
+- low
+- high
 additionalProperties: true

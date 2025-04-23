@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/beaconMapSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Beacon Map
 description: Map of a Beacon, its entry types and endpoints. It isconceptually similar
@@ -57,8 +58,8 @@ $defs:
           $ref: '#/$defs/RelatedEndpoint'
         minProperties: 0
     required:
-      - entryType
-      - rootUrl
+    - entryType
+    - rootUrl
   RelatedEndpoint:
     type: object
     properties:
@@ -71,9 +72,9 @@ $defs:
           match one of the entry types defined in the Beacon configuration file (`beaconConfiguration.json`).
         type: string
     required:
-      - url
-      - returnedEntryType
+    - url
+    - returnedEntryType
 required:
-  - $schema
-  - endpointSets
+- $schema
+- endpointSets
 additionalProperties: true

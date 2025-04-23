@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/doseInterval.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: DoseInterval
 $comments: From https://github.com/phenopackets/phenopacket-schema/blob/v2/docs/dose-interval.rst
@@ -15,16 +16,16 @@ properties:
       indicated quantity.
     $ref: ./timeInterval.yaml
     examples:
-      - start: '1967-11-11T07:30:00+01'
-        end: '1967-11-18T12:00:00+01'
+    - start: '1967-11-11T07:30:00+01'
+      end: '1967-11-18T12:00:00+01'
   scheduleFrequency:
     description: How often doses are administered per day (or other indicated duration)
     $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
     examples:
-      - id: NCIT:C64496
-        label: Twice Daily
+    - id: NCIT:C64496
+      label: Twice Daily
 required:
-  - quantity
-  - interval
-  - scheduleFrequency
+- quantity
+- interval
+- scheduleFrequency
 additionalProperties: false

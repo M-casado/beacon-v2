@@ -1,12 +1,13 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/examples/beaconConfiguration-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 maturityAttributes:
   productionStatus: DEV
 securityAttributes:
   defaultGranularity: boolean
   securityLevels:
-    - PUBLIC
-    - REGISTERED
-    - CONTROLLED
+  - PUBLIC
+  - REGISTERED
+  - CONTROLLED
 entryTypes:
   dataset:
     id: dataset
@@ -23,8 +24,8 @@ entryTypes:
       referenceToSchemaDefinition: ./datasets/defaultSchema.json
       schemaVersion: v.2
     aCollectionOf:
-      - id: exampleEntry
-        name: Example entries
+    - id: exampleEntry
+      name: Example entries
     endpoint: /datasets
     filteringTermsReference: ./datasets/filteringTerms.json
     additionallySupportedSchemas: []

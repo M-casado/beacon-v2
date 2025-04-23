@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconResultsets.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Beacon ResultSet
 description: Sets of results to be returned as query response.
@@ -11,7 +12,7 @@ properties:
       $ref: '#/$defs/ResultsetInstance'
     minItems: 0
 required:
-  - resultSets
+- resultSets
 additionalProperties: true
 $defs:
   ResultsetInstance:
@@ -46,9 +47,9 @@ $defs:
           type: object
         minItems: 0
     required:
-      - id
-      - setType
-      - exists
-      - resultsCount
-      - results
+    - id
+    - setType
+    - exists
+    - resultsCount
+    - results
     additionalProperties: true

@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/genomicVariations/endpoints.json
 openapi: 3.0.2
 servers: []
 info:
@@ -13,26 +14,26 @@ paths:
   /g_variants:
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/includeResultsetResponses'
-        - $ref: '#/components/parameters/start'
-        - $ref: '#/components/parameters/end'
-        - $ref: '#/components/parameters/assemblyId'
-        - $ref: '#/components/parameters/referenceName'
-        - $ref: '#/components/parameters/referenceBases'
-        - $ref: '#/components/parameters/alternateBases'
-        - $ref: '#/components/parameters/variantMinLength'
-        - $ref: '#/components/parameters/variantMaxLength'
-        - $ref: '#/components/parameters/genomicAlleleShortForm'
-        - $ref: '#/components/parameters/geneId'
-        - $ref: '#/components/parameters/aminoacidChange'
-        - $ref: '#/components/parameters/filters'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/includeResultsetResponses'
+      - $ref: '#/components/parameters/start'
+      - $ref: '#/components/parameters/end'
+      - $ref: '#/components/parameters/assemblyId'
+      - $ref: '#/components/parameters/referenceName'
+      - $ref: '#/components/parameters/referenceBases'
+      - $ref: '#/components/parameters/alternateBases'
+      - $ref: '#/components/parameters/variantMinLength'
+      - $ref: '#/components/parameters/variantMaxLength'
+      - $ref: '#/components/parameters/genomicAlleleShortForm'
+      - $ref: '#/components/parameters/geneId'
+      - $ref: '#/components/parameters/aminoacidChange'
+      - $ref: '#/components/parameters/filters'
       description: Get a Beacon response for genomic variations
       operationId: getGenomicVariations
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -42,7 +43,7 @@ paths:
       description: Get a Beacon response for genomic variations
       operationId: postGenomicVariationsRequest
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -60,13 +61,13 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /g_variants/{id}:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
-      description: >-
-        Get details about one genomic variation, identified by its (unique) 'id'
+      description: Get details about one genomic variation, identified by its (unique)
+        'id'
       operationId: getOneGenomicVariation
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -77,11 +78,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get details about one genomic variation, identified by its (unique) 'id'
+      description: Get details about one genomic variation, identified by its (unique)
+        'id'
       operationId: postOneGenomicVariation
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -99,18 +100,17 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /g_variants/{id}/biosamples:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-      description: >-
-        Get a *biosamples* response from one genomic variant, identified by its
-        (unique) 'id'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      description: Get a *biosamples* response from one genomic variant, identified
+        by its (unique) 'id'
       operationId: getOneGenomicVariationBiosamples
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -121,12 +121,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get a *biosamples* response from one genomic variant, identified by its
-        (unique) 'id'
+      description: Get a *biosamples* response from one genomic variant, identified
+        by its (unique) 'id'
       operationId: postOneGenomicVariationBiosamples
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -144,18 +143,17 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /g_variants/{id}/individuals:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-      description: >-
-        Get an *individuals* response from one genomic variant, identified by
-        its (unique) 'id'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      description: Get an *individuals* response from one genomic variant, identified
+        by its (unique) 'id'
       operationId: getOneGenomicVariationIndividuals
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -166,12 +164,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get an *individuals* response from one genomic variant, identified by
-        its (unique) 'id'
+      description: Get an *individuals* response from one genomic variant, identified
+        by its (unique) 'id'
       operationId: postOneGenomicVariationIndividuals
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -195,9 +192,9 @@ components:
         application/json:
           schema:
             oneOf:
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
   parameters:
     requestedSchema:
       name: requestedSchema
@@ -313,10 +310,10 @@ components:
       examples:
         example1:
           value:
-            - EFO:0009655
+          - EFO:0009655
         example2:
           value:
-            - NCIT:C48725
+          - NCIT:C48725
         example3:
           value:
-            - NCIT:C28080
+          - NCIT:C28080

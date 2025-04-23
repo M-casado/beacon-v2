@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/datasets/defaultSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 description: A dataset available in the beacon
 $comment: 'version: ga4gh-beacon-dataset-v2.0.0'
@@ -7,44 +8,44 @@ properties:
     type: string
     description: Unique identifier of the dataset
     examples:
-      - ds01010101
+    - ds01010101
   name:
     type: string
     description: Name of the dataset
     examples:
-      - Dataset with synthetic data
+    - Dataset with synthetic data
   description:
     type: string
     description: Description of the dataset
     examples:
-      - This dataset provides examples of the actual data in this Beacon instance.
+    - This dataset provides examples of the actual data in this Beacon instance.
   createDateTime:
     $ref: ../common/commonDefinitions.yaml#/$defs/Timestamp
     description: The time the dataset was created (ISO 8601 format)
     examples:
-      - '2017-01-17T20:33:40Z'
+    - '2017-01-17T20:33:40Z'
   updateDateTime:
     $ref: ../common/commonDefinitions.yaml#/$defs/Timestamp
     description: The time the dataset was updated in (ISO 8601 format)
     examples:
-      - '2017-01-17T20:33:40Z'
+    - '2017-01-17T20:33:40Z'
   version:
     type: string
     description: Version of the dataset
     examples:
-      - v1.1
+    - v1.1
   externalUrl:
     type: string
     description: URL to an external system providing more dataset information (RFC
       3986 format).
     examples:
-      - https://example.org/wiki/Main_Page
+    - https://example.org/wiki/Main_Page
   info:
     $ref: ../common/info.yaml
   dataUseConditions:
     description: Data use conditions applying to this dataset.
     $ref: ../common/dataUseConditions.yaml
 required:
-  - id
-  - name
+- id
+- name
 additionalProperties: true

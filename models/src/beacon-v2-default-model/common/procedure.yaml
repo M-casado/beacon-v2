@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/procedure.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Procedure
 description: 'Class describing a clinical procedure or intervention. Provenance: GA4GH
@@ -10,21 +11,21 @@ properties:
       Phenopackets v2 `Procedure.code`
     $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
     examples:
-      - id: MAXO:0001175
-        label: liver transplantation
-      - id: MAXO:0000136
-        label: high-resolution microendoscopy
-      - id: OBI:0002654
-        label: needle biopsy
+    - id: MAXO:0001175
+      label: liver transplantation
+    - id: MAXO:0000136
+      label: high-resolution microendoscopy
+    - id: OBI:0002654
+      label: needle biopsy
   bodySite:
     description: Specific body site where the procedure was performed. Recommended
       valuee from Uber-anatomy ontology (UBERON)
     $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
     examples:
-      - id: UBERON:0003403
-        label: Skin of forearm
-      - id: UBERON:0003214
-        label: mammary gland alveolus
+    - id: UBERON:0003403
+      label: Skin of forearm
+    - id: UBERON:0003214
+      label: mammary gland alveolus
   dateOfProcedure:
     description: Date of procedure, in ISO8601 format
     type: string
@@ -34,4 +35,4 @@ properties:
     description: Compares to Phenopackets v2 `Procedure.performed`
     $ref: ./timeElement.yaml
 required:
-  - procedureCode
+- procedureCode

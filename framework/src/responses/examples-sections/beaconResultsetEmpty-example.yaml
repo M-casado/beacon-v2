@@ -1,5 +1,6 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/examples-sections/beaconResultsetEmpty-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 resultSets:
-  - id: correctEmptyResultSet
-    type: dataset
-    exists: false
+- id: correctEmptyResultSet
+  type: dataset
+  exists: false

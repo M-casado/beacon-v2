@@ -1,2 +1,3 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/cohorts/filteringTerms.json
 $schema: https://json-schema.org/draft/2020-12/schema
 filteringTerms: []

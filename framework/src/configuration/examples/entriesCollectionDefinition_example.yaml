@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/examples/entriesCollectionDefinition_example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 id: dataset
 name: Dataset
@@ -13,15 +14,15 @@ defaultSchema:
   referenceToSchemaDefinition: ./datasets/defaultSchema.json
   schemaVersion: v.2
 aCollectionOf:
-  - id: exampleEntry
-    name: Example entries
+- id: exampleEntry
+  name: Example entries
 endpoint: /datasets
 filteringTermsReference: ./datasets/filteringTerms.json
 additionallySupportedSchemas:
-  - id: ohdsi-atlas-cohort
-    name: OHDSI ATLAS Cohort
-    description: ATLAS is an open source software tool for researchers to conduct
-      scientific analyses on standardized observational data converted to the OMOP
-      Common Data Model V5.
-    referenceToSchemaDefinition: https://raw.githubusercontent.com/OHDSIBr/ATLAS-JSON-Schema/2.7.4/single/atlas_cohort_definition.json
-    schemaVersion: 2.7.4
+- id: ohdsi-atlas-cohort
+  name: OHDSI ATLAS Cohort
+  description: ATLAS is an open source software tool for researchers to conduct scientific
+    analyses on standardized observational data converted to the OMOP Common Data
+    Model V5.
+  referenceToSchemaDefinition: https://raw.githubusercontent.com/OHDSIBr/ATLAS-JSON-Schema/2.7.4/single/atlas_cohort_definition.json
+  schemaVersion: 2.7.4

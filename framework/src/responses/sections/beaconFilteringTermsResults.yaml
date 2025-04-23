@@ -1,6 +1,6 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconFilteringTermsResults.json
 $schema: https://json-schema.org/draft/2020-12/schema
-description: >-
-  Filtering terms and ontology resources utilised in this Beacon.
+description: Filtering terms and ontology resources utilised in this Beacon.
 type: object
 properties:
   resources:
@@ -14,110 +14,95 @@ properties:
 $defs:
   FilteringTerm:
     type: object
-    description: >-
-      Entities can be filtered using this term.
+    description: Entities can be filtered using this term.
     required:
-      - type
-      - id
+    - type
+    - id
     properties:
       type:
         type: string
-        description: >-
-          Either "custom", "alphanumeric" or ontology/terminology full name.
-          TODO: An ontology ... with a registered prefix does not need a full name
-          so one may better use CURIE to indicate that the resource can be retrieved
-          from the id. This also will allow to provide an enum here.
-        examples: 
-          - "Human Phenotype Ontology"
-          - alphanumeric
+        description: 'Either "custom", "alphanumeric" or ontology/terminology full
+          name. TODO: An ontology ... with a registered prefix does not need a full
+          name so one may better use CURIE to indicate that the resource can be retrieved
+          from the id. This also will allow to provide an enum here.'
+        examples:
+        - Human Phenotype Ontology
+        - alphanumeric
       id:
-        description: >-
-          The field id in the case of numeric or alphanumeric fields, or
+        description: The field id in the case of numeric or alphanumeric fields, or
           the term id in the case of ontology or custom terms. CURIE syntax in the
           case of an ontology term.
         type: string
         examples:
-          - 'NCIT:C8936'
-          - HP:0008773
+        - NCIT:C8936
+        - HP:0008773
       label:
-        description: >-
-          This would be the "preferred Label" in the case of an ontology term.
+        description: This would be the "preferred Label" in the case of an ontology
+          term.
         type: string
         examples:
-          - 'B Lymphoblastic Leukemia/Lymphoma'
-          - 'Aplasia/Hypoplasia of the middle ear'
+        - B Lymphoblastic Leukemia/Lymphoma
+        - Aplasia/Hypoplasia of the middle ear
       scopes:
-        description: >- 
-          Entry types affected by this filter.
-        examples: 
-          - 
-            - individual 
-            - biosample 
-            - analysis 
-            - run 
-            - genomicVariation 
-          - 
-            - biosample
+        description: Entry types affected by this filter.
+        examples:
+        - - individual
+          - biosample
+          - analysis
+          - run
+          - genomicVariation
+        - - biosample
         type: array
         items:
           type: string
       values:
-        description: >- 
-          Optional list of possible values for alphanumeric filters
-        examples: 
-          - 
-            - benign 
-            - likely benign 
-            - pathogenic 
-          - 
-            - pathogenic
+        description: Optional list of possible values for alphanumeric filters
+        examples:
+        - - benign
+          - likely benign
+          - pathogenic
+        - - pathogenic
         type: array
         items:
           type: string
         minItems: 1
   Resource:
     type: object
-    description: >-
-      Description of an ontology resource defined externally to this beacon
+    description: Description of an ontology resource defined externally to this beacon
       implementation, such as MeSH or EFO, based on the phenopackets resource object
       (https://phenopacket-schema.readthedocs.io/en/latest/resource.html)
     required:
-      - id
+    - id
     properties:
       id:
         type: string
-        description: >-
-          Preferably OBO ID representing the resource; alternatively a URI pointing
-          towards the definitions may be used if not in OBO.
+        description: Preferably OBO ID representing the resource; alternatively a
+          URI pointing towards the definitions may be used if not in OBO.
         examples:
-          - hp
+        - hp
       name:
         type: string
-        description: >-
-          The name of the ontology referred to by the id element
+        description: The name of the ontology referred to by the id element
         examples:
-          - Human Phenotype Ontology
+        - Human Phenotype Ontology
       url:
         type: string
-        description: >-
-          Uniform Resource Locator of the resource
+        description: Uniform Resource Locator of the resource
         examples:
-          - https://purl.obolibrary.org/obo/hp.owl
+        - https://purl.obolibrary.org/obo/hp.owl
       version:
         type: string
-        description: >-
-          The version of the resource or ontology used to make the annotation
+        description: The version of the resource or ontology used to make the annotation
         examples:
-          - 17-06-2019
+        - 17-06-2019
       nameSpacePrefix:
         type: string
-        description: >-
-          The prefix used in the CURIE of an OntologyClass
+        description: The prefix used in the CURIE of an OntologyClass
         examples:
-          - HP
+        - HP
       iriPrefix:
         type: string
         description: The full Internationalized Resource Identifier (IRI) prefix
         examples:
-          - https://purl.obolibrary.org/obo/HP_
+        - https://purl.obolibrary.org/obo/HP_
 additionalProperties: true

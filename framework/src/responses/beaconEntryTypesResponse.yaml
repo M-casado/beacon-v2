@@ -1,20 +1,17 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/beaconEntryTypesResponse.json
 $schema: https://json-schema.org/draft/2020-12/schema
 type: object
-description: >-
-  The `beaconEntryTypesResponse` provides information about the entry types
-  served through a beacon, including their definitions and pointers to their
-  schemas.
+description: The `beaconEntryTypesResponse` provides information about the entry types
+  served through a beacon, including their definitions and pointers to their schemas.
 properties:
   meta:
-    description: >-
-      Information about the response that could be relevant for the Beacon
+    description: Information about the response that could be relevant for the Beacon
       client in order to interpret the results.
     $ref: ./sections/beaconInformationalResponseMeta.yaml
   response:
-    description: >-
-      Returning the Beacon Entry Types.
+    description: Returning the Beacon Entry Types.
     $ref: ../configuration/entryTypesSchema.yaml
 required:
-  - meta
-  - response
+- meta
+- response
 additionalProperties: true

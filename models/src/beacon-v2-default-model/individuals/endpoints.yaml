@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/individuals/endpoints.json
 openapi: 3.0.2
 servers: []
 info:
@@ -13,15 +14,15 @@ paths:
   /individuals:
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/includeResultsetResponses'
-        - $ref: '#/components/parameters/filters'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/includeResultsetResponses'
+      - $ref: '#/components/parameters/filters'
       description: Get a list of individuals
       operationId: getIndividuals
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -31,7 +32,7 @@ paths:
       description: Get a Beacon response for individuals
       operationId: postIndividualsRequest
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -49,13 +50,12 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /individuals/{id}:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
-      description: >-
-        Get details about one individual, identified by its (unique) 'id'
+      description: Get details about one individual, identified by its (unique) 'id'
       operationId: getOneIndividual
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -66,11 +66,10 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get details about one individual, identified by its (unique) 'id'
+      description: Get details about one individual, identified by its (unique) 'id'
       operationId: postOneIndividual
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -88,18 +87,17 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /individuals/{id}/g_variants:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-      description: >-
-        Get a *genomic variations* response for one individual, identified by
-        its (unique) 'id'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      description: Get a *genomic variations* response for one individual, identified
+        by its (unique) 'id'
       operationId: getOneIndividualGenomicVariants
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -110,12 +108,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get a *genomic variations* response for one individual, identified by
-        its (unique) 'id'
+      description: Get a *genomic variations* response for one individual, identified
+        by its (unique) 'id'
       operationId: potOneIndividualGenomicVariants
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -133,18 +130,17 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /individuals/{id}/biosamples:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-      description: >-
-        Get a *biosamples* response for one individual, identified by its
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      description: Get a *biosamples* response for one individual, identified by its
         (unique) 'id'
       operationId: getOneIndividualBiosamples
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -155,12 +151,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get a *biosamples* response for one individual, identified by its
+      description: Get a *biosamples* response for one individual, identified by its
         (unique) 'id'
       operationId: postOneIndividualBiosamples
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -179,12 +174,12 @@ paths:
   /individuals/filtering_terms:
     get:
       parameters:
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
       description: Get the list of filtering terms that could be used with individuals.
       operationId: getIndivualsFilteringTerms
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           description: Successful operation
@@ -202,7 +197,7 @@ paths:
       description: Get the list of filtering terms that could be used with individuals.
       operationId: postIndividualsFilteringTerms
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -230,9 +225,9 @@ components:
         application/json:
           schema:
             oneOf:
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
   parameters:
     requestedSchema:
       name: requestedSchema
@@ -274,4 +269,4 @@ components:
       examples:
         example1:
           value:
-            - NCIT:C20197
+          - NCIT:C20197

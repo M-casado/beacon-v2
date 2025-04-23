@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/biosamples/examples/biosample-MIN-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 id: sample-example-0001
 biosampleStatus:

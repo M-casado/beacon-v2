@@ -1,14 +1,14 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/beaconErrorResponse.json
 $schema: https://json-schema.org/draft/2020-12/schema
 type: object
-description: >-
-  A `beaconErrorResponse` denotes an unsuccessful operation, e.g. due to a missing
-  parameter or an invalid query. The response contains an error object.
+description: A `beaconErrorResponse` denotes an unsuccessful operation, e.g. due to
+  a missing parameter or an invalid query. The response contains an error object.
 properties:
   meta:
     $ref: ./sections/beaconResponseMeta.yaml
   error:
     $ref: ../common/beaconCommonComponents.yaml#/$defs/BeaconError
 required:
-  - meta
-  - error
+- meta
+- error
 additionalProperties: true

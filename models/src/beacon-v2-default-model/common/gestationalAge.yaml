@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/gestationalAge.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: GestationalAge
 description: 'Gestational age (or menstrual age) is the time elapsed between the first
@@ -15,13 +16,13 @@ properties:
     description: Completed weeks of gestation according to the above definition.
     type: integer
     examples:
-      - 4
-      - 33
+    - 4
+    - 33
   days:
     description: Days beyond the completed weeks, if available.
     type: integer
     examples:
-      - 2
-      - 4
+    - 2
+    - 4
 required:
-  - weeks
+- weeks
