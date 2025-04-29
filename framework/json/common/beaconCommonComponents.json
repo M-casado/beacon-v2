@@ -44,6 +44,15 @@
             ],
             "type": "string"
         },
+        "CountAdjustedTo": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+                "type": ["integer","string"],
+                "minimum": 1
+            }
+        },
         "CURIE": {
             "description": "Definition of an identifier in the CURIE `prefix:local-part` format which is the default type of e.g. ontology term `id` values (used e.g. for filters or external identifiers).",
             "examples": [
@@ -205,6 +214,11 @@
                 }
             },
             "type": "object"
+        },
+        "PrecisionCount": {
+            "enum": ["exact", "rounded"],
+            "default": "rounded",
+            "type": "string"
         },
         "SchemasPerEntity": {
             "description": "Schema to be used for the requested entry type in the response.",

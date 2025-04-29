@@ -45,6 +45,14 @@ $defs:
         items:
           type: object
         minItems: 0
+      countAdjustedTo:
+        description: List of handovers that apply to this resultset, not to the whole
+          Beacon or to a result in particular.
+        $ref: ../../common/beaconCommonComponents.yaml#/$defs/CountAdjustedTo
+      countPrecision:
+        description: List of handovers that apply to this resultset, not to the whole
+          Beacon or to a result in particular.
+        $ref: ../../common/beaconCommonComponents.yaml#/$defs/PrecisionCount
     required:
       - id
       - setType

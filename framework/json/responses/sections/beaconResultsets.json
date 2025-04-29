@@ -3,6 +3,12 @@
         "ResultsetInstance": {
             "additionalProperties": true,
             "properties": {
+                "countAdjustedTo": {
+                    "$ref": "../../common/beaconCommonComponents.json#/$defs/CountAdjustedTo"
+                },
+                "countPrecision": {
+                    "$ref": "../../common/beaconCommonComponents.json#/$defs/PrecisionCount"
+                },
                 "exists": {
                     "type": "boolean"
                 },

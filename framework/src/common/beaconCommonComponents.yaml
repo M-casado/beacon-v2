@@ -50,6 +50,15 @@ $defs:
         type: string
         examples:
           - 'The provided parameters are incomplete: `start` is missing.'
+  CountAdjustedTo:
+    type: array
+    minItems: 1
+    maxItems: 2
+    items:
+      type: 
+        - integer
+        - string
+      minimum: 1
   CURIE:
     pattern: ^\w[^:]+:.+$
     type: string
@@ -131,6 +140,12 @@ $defs:
       (a subset of) a query response.
     type: string
     example: ab0sc&fe1dd
+  PrecisionCount:
+    enum:
+      - exact
+      - rounded
+    default: rounded
+    type: string
   Granularity:
     description: >-
       Level of detail of the response:

@@ -3,6 +3,14 @@ description: >-
   Payload definition for the "count" response.
 type: object
 properties:
+  countAdjustedTo:
+    description: List of handovers that apply to this resultset, not to the whole
+      Beacon or to a result in particular.
+    $ref: ../../common/beaconCommonComponents.yaml#/$defs/CountAdjustedTo
+  countPrecision:
+    description: List of handovers that apply to this resultset, not to the whole
+      Beacon or to a result in particular.
+    $ref: ../../common/beaconCommonComponents.yaml#/$defs/PrecisionCount
   exists:
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/Exists
   numTotalResults:
