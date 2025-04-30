@@ -51,6 +51,10 @@ $defs:
         examples:
           - 'The provided parameters are incomplete: `start` is missing.'
   CountAdjustedTo:
+    description: >-
+      For counts with intentional (e.g. due to privacy concerns) or technical
+      derived imprecision this parameter offers an option to declare the range
+      or limits for the true results.
     type: array
     minItems: 1
     maxItems: 2
@@ -59,6 +63,12 @@ $defs:
         - integer
         - string
       minimum: 1
+  CountPrecision:
+    enum:
+      - exact
+      - rounded
+    default: rounded
+    type: string
   CURIE:
     pattern: ^\w[^:]+:.+$
     type: string
@@ -140,12 +150,6 @@ $defs:
       (a subset of) a query response.
     type: string
     example: ab0sc&fe1dd
-  PrecisionCount:
-    enum:
-      - exact
-      - rounded
-    default: rounded
-    type: string
   Granularity:
     description: >-
       Level of detail of the response:

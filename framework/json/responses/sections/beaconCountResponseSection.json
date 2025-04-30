@@ -3,10 +3,12 @@
     "description": "Payload definition for the \"count\" response.",
     "properties": {
         "countAdjustedTo": {
-            "$ref": "../../common/beaconCommonComponents.json#/$defs/CountAdjustedTo"
+            "$ref": "../../common/beaconCommonComponents.json#/$defs/CountAdjustedTo",
+            "description": "List of handovers that apply to this resultset, not to the whole Beacon or to a result in particular."
         },
         "countPrecision": {
-            "$ref": "../../common/beaconCommonComponents.json#/$defs/PrecisionCount"
+            "$ref": "../../common/beaconCommonComponents.json#/$defs/CountPrecision",
+            "description": "List of handovers that apply to this resultset, not to the whole Beacon or to a result in particular."
         },
         "exists": {
             "$ref": "../../common/beaconCommonComponents.json#/$defs/Exists"
