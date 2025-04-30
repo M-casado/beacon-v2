@@ -10,7 +10,7 @@ properties:
   countPrecision:
     description: List of handovers that apply to this resultset, not to the whole
       Beacon or to a result in particular.
-    $ref: ../../common/beaconCommonComponents.yaml#/$defs/PrecisionCount
+    $ref: ../../common/beaconCommonComponents.yaml#/$defs/CountPrecision
   exists:
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/Exists
   numTotalResults:
