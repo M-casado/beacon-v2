@@ -1,11 +1,13 @@
-site_name: Beacon v2 Documentation
-site_description: 'Documentation for Beacon v2'
-site_author: 'Michael Baudis, Manuel Rueda, Laureen Fromont & Beacon Developers'
+site_name: Beacon Protocol Documentation
+site_description: Documentation for the GA4GH Beacon standard
+site_author: Michael Baudis, Manuel Rueda, Laureen Fromont & Beacon Developers
 copyright: '&copy; Copyright 2021-2025, Beacon v2 Documentation Contributors'
-repo_name: 'beacon-v2'
+repo_name: beacon-v2
 repo_url: https://github.com/ga4gh-beacon/beacon-v2
 edit_uri: edit/main/docs/
 
+beacon_major_version: v2
+repo_icon: " [:fontawesome-brands-github:](https://github.com/ga4gh-beacon/beacon-v2/)"
 repo_framework_icon: " [:fontawesome-brands-github:](https://github.com/ga4gh-beacon/beacon-v2/tree/main/framework/src)"
 repo_models_icon: " [:fontawesome-brands-github:](https://github.com/ga4gh-beacon/beacon-v2/tree/main/models/src)"
 
@@ -49,7 +51,7 @@ nav:
                - Runs: schemas-md/runs_defaultSchema
             - Terms List: schemas-md/beacon_terms
     - Beacon Development:
-        # - How to Contribute: contribute
+        - How to Contribute: contribute
         - Repository and Branch Organization: code-organization
         - Github Repositories &#8599;: https://github.com/ga4gh-beacon/
     # - Download PDF: pdf/beacon.pdf

@@ -119,7 +119,7 @@ to `beacon-v2`.
 
 * Reorganization of navigation
 * Deleted page `implement-and-deploy.md`
-* Added pages: [What is Beacon v2](what-is-beacon-v2.md) and [Implementation options](implementations-options.md)
+* Added pages: [What is Beacon](what-is-beacon-v2.md) and [Implementation options](implementations-options.md)
 * [Filters](filters.md) Page Updated
 
 ### 2022-03-18: Macros and Variables for Documentation pages
