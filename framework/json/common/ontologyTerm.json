@@ -1,19 +1,20 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "additionalProperties": true,
-    "description": "Definition of an ontology term.",
-    "properties": {
-        "id": {
-            "$ref": "./beaconCommonComponents.json#/$defs/CURIE"
-        },
-        "label": {
-            "description": "The text that describes the term. By default it could be the preferred text of the term, but is it acceptable to customize it for a clearer description and understanding of the term in an specific context.",
-            "type": "string"
-        }
+  "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/ontologyTerm.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "description": "Definition of an ontology term.",
+  "properties": {
+    "id": {
+      "$ref": "./beaconCommonComponents.json#/$defs/CURIE"
     },
-    "required": [
-        "id"
-    ],
-    "title": "Ontology Term",
-    "type": "object"
+    "label": {
+      "description": "The text that describes the term. By default it could be the preferred text of the term, but is it acceptable to customize it for a clearer description and understanding of the term in an specific context.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "title": "Ontology Term",
+  "type": "object"
 }

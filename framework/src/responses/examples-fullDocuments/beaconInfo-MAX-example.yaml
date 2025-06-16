@@ -1,10 +1,11 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/examples-fullDocuments/beaconInfo-MAX-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 meta:
   beaconId: string
   apiVersion: string
   returnedSchemas:
-    - entityType: info
-      schema: beacon-info-v2.0.0
+  - entityType: info
+    schema: beacon-info-v2.0.0
 response:
   id: org.ga4gh.beacon
   name: string
@@ -28,6 +29,6 @@ response:
   info:
     additionalInfoKey1: additionalInfoValue1
     additionalInfoKey2:
-      - additionalInfoValue2
-      - additionalInfoValue3
+    - additionalInfoValue2
+    - additionalInfoValue3
 info: {}

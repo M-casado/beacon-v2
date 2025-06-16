@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/externalReference.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: ExternalReference
 description: 'Definition of an external reference class. Provenance: GA4GH Phenopackets

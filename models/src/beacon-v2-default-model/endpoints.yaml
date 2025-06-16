@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/endpoints.json
 openapi: 3.0.2
 servers: []
 info:
@@ -13,12 +14,12 @@ info:
 paths:
   /:
     parameters:
-      - $ref: '#/components/parameters/requestedSchema'
+    - $ref: '#/components/parameters/requestedSchema'
     get:
       description: Get information about the beacon
       operationId: getBeaconRoot
       tags:
-        - Informational endpoints
+      - Informational endpoints
       responses:
         '200':
           $ref: '#/components/responses/infoOKResponse'
@@ -30,12 +31,12 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /info:
     parameters:
-      - $ref: '#/components/parameters/requestedSchema'
+    - $ref: '#/components/parameters/requestedSchema'
     get:
       description: Get information about the beacon
       operationId: getBeaconInfoRoot
       tags:
-        - Informational endpoints
+      - Informational endpoints
       responses:
         '200':
           $ref: '#/components/responses/infoOKResponse'
@@ -50,7 +51,7 @@ paths:
       description: Get information about the beacon using GA4GH ServiceInfo format
       operationId: getBeaconServiceInfo
       tags:
-        - Informational endpoints
+      - Informational endpoints
       responses:
         '200':
           description: Successful operation
@@ -63,7 +64,7 @@ paths:
       description: TBD
       operationId: getBeaconConfiguration
       tags:
-        - Configuration
+      - Configuration
       responses:
         '200':
           description: Successful operation
@@ -83,7 +84,7 @@ paths:
       description: TBD
       operationId: getEntryTypes
       tags:
-        - Configuration
+      - Configuration
       parameters: []
       responses:
         '200':
@@ -104,7 +105,7 @@ paths:
       description: TBD
       operationId: getBeaconMap
       tags:
-        - Configuration
+      - Configuration
       parameters: []
       responses:
         '200':
@@ -122,13 +123,13 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /filtering_terms:
     parameters:
-      - $ref: '#/components/parameters/skip'
-      - $ref: '#/components/parameters/limit'
+    - $ref: '#/components/parameters/skip'
+    - $ref: '#/components/parameters/limit'
     get:
       description: Get the list of filtering terms handled by this beacon
       operationId: getFilteringTerms
       tags:
-        - Informational endpoints
+      - Informational endpoints
       responses:
         '200':
           description: Successful operation

@@ -1,11 +1,12 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/elementWithDescription.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Basic Element including a description
 description: Definition of the basic element extended with a description.
 type: object
 allOf:
-  - $ref: ./basicElement.yaml
-  - type: object
-    properties:
-      description:
-        type: string
-        description: A textual description for the element.
+- $ref: ./basicElement.yaml
+- type: object
+  properties:
+    description:
+      type: string
+      description: A textual description for the element.

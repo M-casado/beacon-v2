@@ -1,6 +1,6 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconCountResponseSection.json
 $schema: https://json-schema.org/draft/2020-12/schema
-description: >-
-  Payload definition for the "count" response.
+description: Payload definition for the "count" response.
 type: object
 properties:
   exists:
@@ -9,5 +9,5 @@ properties:
     description: Total number of results.
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/NumTotalResults
 required:
-  - exists
-  - numTotalResults
+- exists
+- numTotalResults

@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/filteringTermsSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Filtering Terms schema
 description: Schema for the Filtering Terms list related to the hosting entry type.
@@ -30,34 +31,34 @@ $defs:
           familiar with the custom dictionary.
         type: string
         enum:
-          - ontologyTerm
-          - alphanumeric
-          - custom
+        - ontologyTerm
+        - alphanumeric
+        - custom
       id:
         type: string
         description: Term ID, Field ID or custom term string. For term ID use CURIE
           syntax where possible.
         examples:
-          - HP:0002664
-          - age
-          - demographic.ethnicity:subsaharan
+        - HP:0002664
+        - age
+        - demographic.ethnicity:subsaharan
       label:
         type: string
         description: Label for the ontology term. For other `ftTypes` add a readable
           description
         examples:
-          - Neoplasm
-          - age in days
-          - Ethnic origin from South of the Sahara Desert.
+        - Neoplasm
+        - age in days
+        - Ethnic origin from South of the Sahara Desert.
       scope:
         type: string
         description: The entry type to which the filter applies
         examples:
-          - biosample
-          - individual
+        - biosample
+        - individual
     required:
-      - ftType
-      - id
+    - ftType
+    - id
 required:
-  - filteringTerms
+- filteringTerms
 additionalProperties: true

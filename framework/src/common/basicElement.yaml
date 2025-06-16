@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/basicElement.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Basic Element
 description: Definition of the basic element, which is root for most other objects.
@@ -10,6 +11,6 @@ properties:
     type: string
     description: A distinctive name for the element.
 required:
-  - id
-  - name
+- id
+- name
 additionalProperties: true

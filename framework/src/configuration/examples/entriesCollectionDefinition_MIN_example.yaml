@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/examples/entriesCollectionDefinition_MIN_example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 id: dataset
 name: Dataset
@@ -11,5 +12,5 @@ defaultSchema:
   referenceToSchemaDefinition: ./datasets/defaultSchema.json
   schemaVersion: v.2
 aCollectionOf:
-  - id: exampleEntry
-    name: Example entries
+- id: exampleEntry
+  name: Example entries

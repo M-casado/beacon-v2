@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/timeInterval.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: TimeInterval
 description: Time interval with start and end defined as ISO8601 time stamps.
@@ -7,13 +8,13 @@ properties:
   start:
     $ref: ./commonDefinitions.yaml#/$defs/Timestamp
     examples:
-      - '1999-08-05T17:21:00+01:00'
-      - '2002-09-21T02:37:00-08:00'
+    - '1999-08-05T17:21:00+01:00'
+    - '2002-09-21T02:37:00-08:00'
   end:
     $ref: ./commonDefinitions.yaml#/$defs/Timestamp
     examples:
-      - '2022-03-10T15:25:07Z'
+    - '2022-03-10T15:25:07Z'
 required:
-  - start
-  - end
+- start
+- end
 additionalProperties: false

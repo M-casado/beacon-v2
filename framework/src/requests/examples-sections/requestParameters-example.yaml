@@ -1,7 +1,9 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/requests/examples-sections/requestParameters-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 exampleEntry:
-  description: "All the required fields to query any kind of variant (e.g. SNP, DUP,\n\
-    etc.)."
+  description: 'All the required fields to query any kind of variant (e.g. SNP, DUP,
+
+    etc.).'
   type: object
   properties:
     id:

@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/ageRange.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: AgeRange
 description: 'Age range definition. Provenance: GA4GH Phenopackets v2 `AgeRange`'
@@ -10,5 +11,5 @@ properties:
     description: Represents age as an ISO8601 duration (e.g., P59Y).
     $ref: ./age.yaml
 required:
-  - start
-  - end
+- start
+- end

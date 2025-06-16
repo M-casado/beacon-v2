@@ -1,3 +1,4 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/cohorts/endpoints.json
 openapi: 3.0.2
 servers: []
 info:
@@ -10,22 +11,22 @@ info:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 tags:
-  - name: GET Endpoints
-    description: Available endpoints in this API. All of them have a POST counterpart.
-  - name: POST Endpoints
-    description: The same operations than GET, just by POST.
+- name: GET Endpoints
+  description: Available endpoints in this API. All of them have a POST counterpart.
+- name: POST Endpoints
+  description: The same operations than GET, just by POST.
 paths:
   /cohorts:
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-        - $ref: '#/components/parameters/filters'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/filters'
       description: Get a Beacon *cohorts* response
       operationId: getCohorts
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/CollectionsResponse'
@@ -35,7 +36,7 @@ paths:
       description: Get a Beacon *cohorts* response
       operationId: postCohortsRequest
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -53,14 +54,14 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /cohorts/{id}:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/requestedSchema'
       description: Get details about one cohort, identified by its (unique) 'id'
       operationId: getOneCohort
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -74,7 +75,7 @@ paths:
       description: Get details about one cohort, identified by its (unique) 'id'
       operationId: postOneCohort
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -92,18 +93,17 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /cohorts/{id}/individuals:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/requestedSchema'
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-      description: >-
-        Get an *individuals* response for one cohort, identified by its (unique)
-        'id'
+      - $ref: '#/components/parameters/requestedSchema'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      description: Get an *individuals* response for one cohort, identified by its
+        (unique) 'id'
       operationId: getOneCohortIndividuals
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
@@ -114,12 +114,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get an *individuals* response for one cohort, identified by its (unique)
-        'id'
+      description: Get an *individuals* response for one cohort, identified by its
+        (unique) 'id'
       operationId: postOneCohortEntries
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -137,17 +136,16 @@ paths:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
   /cohorts/{id}/filtering_terms:
     parameters:
-      - $ref: '#/components/parameters/entryId'
+    - $ref: '#/components/parameters/entryId'
     get:
       parameters:
-        - $ref: '#/components/parameters/skip'
-        - $ref: '#/components/parameters/limit'
-      description: >-
-        Get a response about the *filtering terms* that could be used with a
-        given cohort, identified by its (unique) 'id'
+      - $ref: '#/components/parameters/skip'
+      - $ref: '#/components/parameters/limit'
+      description: Get a response about the *filtering terms* that could be used with
+        a given cohort, identified by its (unique) 'id'
       operationId: getOneCohortFilteringTerms
       tags:
-        - GET Endpoints
+      - GET Endpoints
       responses:
         '200':
           description: Successful operation
@@ -162,12 +160,11 @@ paths:
               schema:
                 $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
     post:
-      description: >-
-        Get a response about the *filtering terms* that could be used with a
-        given cohort, identified by its (unique) 'id'
+      description: Get a response about the *filtering terms* that could be used with
+        a given cohort, identified by its (unique) 'id'
       operationId: postOneCohortFilteringTerms
       tags:
-        - POST Endpoints
+      - POST Endpoints
       requestBody:
         content:
           application/json:
@@ -195,18 +192,18 @@ components:
         application/json:
           schema:
             oneOf:
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
     CollectionsResponse:
       description: Successful collection list operation.
       content:
         application/json:
           schema:
             oneOf:
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
-              - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCollectionsResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
+            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCollectionsResponse.json
   parameters:
     requestedSchema:
       name: requestedSchema
@@ -243,4 +240,4 @@ components:
       examples:
         example1:
           value:
-            - OMIABIS:0001017
+          - OMIABIS:0001017

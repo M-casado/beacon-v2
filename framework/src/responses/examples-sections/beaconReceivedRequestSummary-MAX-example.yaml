@@ -1,16 +1,17 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/examples-sections/beaconReceivedRequestSummary-MAX-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 apiVersion: v2.0
 requestedSchemas:
-  - entityType: Individual
-    schema: ga4gh-phenopacket-individual-v0.1
+- entityType: Individual
+  schema: ga4gh-phenopacket-individual-v0.1
 requestParameters:
   individual:
     parameters:
-      - id: '123'
+    - id: '123'
 IncludeResultsetResponses: HIT
 filters:
-  - BTO:0000199
-  - PATO:0000383
+- BTO:0000199
+- PATO:0000383
 pagination:
   skip: 1
   limit: 10

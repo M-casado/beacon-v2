@@ -1,11 +1,11 @@
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/entryTypeDefinition.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: ''
-description: >-
-  Definition of an element or scope of the element, to describe each type of entry type included
-  in a beacon.
-  The `id` attribute is the key that should be used in other parts of the data model
-  to allow Beacon clients to identify the different parts (e.g. endpoints, filtering
-  terms, request parameters, etc.) that are relvant for an entry type.
+description: Definition of an element or scope of the element, to describe each type
+  of entry type included in a beacon. The `id` attribute is the key that should be
+  used in other parts of the data model to allow Beacon clients to identify the different
+  parts (e.g. endpoints, filtering terms, request parameters, etc.) that are relvant
+  for an entry type.
 type: object
 properties:
   $schema:
@@ -14,9 +14,9 @@ properties:
     type: string
     description: A unique identifier of the element.
     examples:
-      - biosample
-      - individual
-      - dataset
+    - biosample
+    - individual
+    - dataset
   name:
     type: string
     description: A distinctive name for the element.
@@ -26,10 +26,10 @@ properties:
   ontologyTermForThisType:
     $ref: ../common/ontologyTerm.yaml
     examples:
-      - id: EFO:0000542
-        label: individual
-      - id: OBI:0000747
-        label: material sample
+    - id: EFO:0000542
+      label: individual
+    - id: OBI:0000747
+      label: material sample
   partOfSpecification:
     description: This is label to group together entry types that are part of the
       same specification.
@@ -59,8 +59,8 @@ properties:
   nonFilteredQueriesAllowed:
     $ref: ../common/beaconCommonComponents.yaml#/$defs/NonFilteredQueriesAllowed
 required:
-  - id
-  - name
-  - partOfSpecification
-  - defaultSchema
+- id
+- name
+- partOfSpecification
+- defaultSchema
 additionalProperties: true
