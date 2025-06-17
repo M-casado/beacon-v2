@@ -14,7 +14,7 @@
       "type": "boolean"
     },
     "featureType": {
-      "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json",
+      "$ref": "../../../../framework/json/common/ontologyTerm.json",
       "description": "Term denoting the phenotypic feature, preferably using a value from Human Phenotype Ontology (HPO)",
       "examples": [
         {
@@ -44,7 +44,7 @@
         }
       ],
       "items": {
-        "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json"
+        "$ref": "../../../../framework/json/common/ontologyTerm.json"
       },
       "type": "array"
     },
