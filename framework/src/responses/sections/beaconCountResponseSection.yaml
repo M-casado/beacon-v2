@@ -4,17 +4,12 @@ description: >-
 type: object
 properties:
   countAdjustedTo:
-    description: List of handovers that apply to this resultset, not to the whole
-      Beacon or to a result in particular.
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/CountAdjustedTo
   countPrecision:
-    description: List of handovers that apply to this resultset, not to the whole
-      Beacon or to a result in particular.
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/CountPrecision
   exists:
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/Exists
   numTotalResults:
-    description: Total number of results.
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/NumTotalResults
 required:
   - exists
