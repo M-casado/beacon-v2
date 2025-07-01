@@ -1,4 +1,4 @@
-# Unified repository for Beacon v2 Code & Documentation
+# Unified repository for Beacon Code & Documentation
 
 ## Description
 
