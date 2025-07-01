@@ -34,7 +34,7 @@ There is a set of tools in [`/bin`](./bin/) to facilitate the conversion. ATM, a
 ## 2.2
 
 *Released, July, 1, 2025*
-[Beacon-v2.2](https://github.com/ga4gh-beacon/beacon-v2/tree/a6fc625125e850b538c5691862cc83d879f4996f)
+[Beacon-v2.2](https://github.com/ga4gh-beacon/beacon-v2/tree/81dbe9c0ed693b4e897d81abb1043954bd2e65ba)
 
 * De-restricting Resultset formats
 * filteringTerms scope definition modification
