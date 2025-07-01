@@ -31,6 +31,31 @@ There is a set of tools in [`/bin`](./bin/) to facilitate the conversion. ATM, a
 
 ### Changelog
 
+## 2.2
+
+*Released, July, 1, 2025*
+[Beacon-v2.1.2](https://github.com/ga4gh-beacon/beacon-v2/tree/)
+
+* De-restricting Resultset formats
+* filteringTerms scope definition modification
+* Rounding counts for queries with count responses
+
+## 2.1.2
+
+*Released, July, 1, 2025*
+[Beacon-v2.1.2](https://github.com/ga4gh-beacon/beacon-v2/tree/)
+
+* Fix incorrect reference in models
+* Removing filtering terms references specific to each entry type
+* Removing ft examples for configuration
+* Delete /configuration/filteringTermsSchema.yaml/json
+* src -> json cosmetics fix
+* Fix for failing timeElement validation
+* Fix complexValue example
+* Schema urgent fixes endpoints all absolute paths
+* Fix date-time format string
+* Changes for issue 156 OpenAPI related
+
 ## 2.1.1
 
 *Released, December 13, 2024*
