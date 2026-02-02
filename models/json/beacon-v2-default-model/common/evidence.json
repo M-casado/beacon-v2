@@ -1,7 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/evidence.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "additionalProperties": true,
   "description": "Definition of an evidence class. Provenance: GA4GH Phenopackets v2 `Evidence`",
   "properties": {
     "evidenceCode": {

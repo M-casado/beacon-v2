@@ -97,7 +97,6 @@
     }
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "additionalProperties": true,
   "description": "Pedigree studies in which the individual is part of.",
   "properties": {
     "disease": {

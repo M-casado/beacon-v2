@@ -1,7 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/exposure.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "additionalProperties": true,
   "description": "Exposures (lifestyle, behavioural exposures) occurred to individual, defined by exposure ID, date and age of onset, dose, and duration.",
   "properties": {
     "ageAtExposure": {

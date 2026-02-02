@@ -2,7 +2,6 @@
   "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/runs/defaultSchema.json",
   "$comment": "version: ga4gh-beacon-run-v2.0.0",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "additionalProperties": true,
   "description": "Schema for the experimental run (e.g. sequencing run, array processing...) leading to the raw data for the (computational) analysis.",
   "properties": {
     "biosampleId": {
