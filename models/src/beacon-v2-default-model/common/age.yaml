@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/age.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/common/age.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Age
 description: 'Age value definition. Provenance: GA4GH Phenopackets v2 `Age`'

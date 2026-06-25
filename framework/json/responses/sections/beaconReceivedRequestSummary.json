@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconReceivedRequestSummary.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/sections/beaconReceivedRequestSummary.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Section of the response that summarize the request received as it has been interpreted by the Beacon server. This summary can help to identify differences between the incoming request and its interpretation or processing, e.g. in the response granularity or pagination. The required properties include those that should be part of every request.",
     "properties": {

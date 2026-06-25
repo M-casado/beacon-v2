@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/referenceToAnSchema.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/common/referenceToAnSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: An annotated URL address or a file reference
 description: Definition of an annotated URL address or a file reference.

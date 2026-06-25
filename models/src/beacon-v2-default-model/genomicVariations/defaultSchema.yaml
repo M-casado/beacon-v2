@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/genomicVariations/defaultSchema.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/genomicVariations/defaultSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Genomic Variation
 $comment: 'version: ga4gh-beacon-variant-v2.1.0'
@@ -171,7 +171,7 @@ $defs:
           are recommended, e.g.  `SO:0001583: missense variant`.'
         type: array
         items:
-          $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+          $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: SO:0002322
           label: stop gained NMD escaping
@@ -194,7 +194,7 @@ $defs:
         description: 'Ontology term that describes the class of genomic feature affected
           by the variant. Values from SO (Sequence ontology) are recommended, e.g.
           `SO:0001623: 5 prime UTR variant`'
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: SO:0001623
           label: 5 prime UTR variant
@@ -203,7 +203,7 @@ $defs:
           to the `featureClass`, preferably in CURIE format. If the value is a gene
           id or name, it points to the gene related to the `featureClass`, e.g. `the
           5 prime UTR upstream of TP53`
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: HGNC:11998
           label: TP53
@@ -222,7 +222,7 @@ $defs:
       category:
         description: Ontology term for the type of disease, condition, phenotypic
           measurement, etc.
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: MONDO:0000001
           label: disease or disorder
@@ -230,7 +230,7 @@ $defs:
           label: phenotypic abnormality
       effect:
         description: Ontology term for the phenotypic or clinical effect
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: MONDO:0003582
           label: hereditary breast ovarian cancer syndrome
@@ -253,7 +253,7 @@ $defs:
         description: 'Ontology term for the type of evidence supporting variant-disease
           association Recommended: values from the Evidence & Conclusion Ontology
           (ECO)'
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: ECO:0000361
           label: inferential evidence
@@ -347,7 +347,7 @@ $defs:
       zygosity:
         description: Ontology term for zygosity in which variant is present in the
           sample from the Zygosity Ontology (GENO:0000391) , e.g `heterozygous` (GENO:0000135)
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: GENO:0000135
           label: heterozygous
@@ -361,7 +361,7 @@ $defs:
           variant`, `maternal variant`, `paternal variant`, `de novo variant`, `pedigree
           specific variant`, `population specific variant`. Corresponds to Variant
           Inheritance in FHIR.
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         examples:
         - id: SO:0001777
           label: somatic variant

@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/elementWithDescription.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/common/elementWithDescription.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Basic Element including a description
 description: Definition of the basic element extended with a description.

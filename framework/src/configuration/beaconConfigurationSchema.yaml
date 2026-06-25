@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/beaconConfigurationSchema.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/configuration/beaconConfigurationSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Beacon Configuration
 description: The Beacon configuration reports several attributes of the beacon instance

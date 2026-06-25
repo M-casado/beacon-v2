@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/beaconErrorResponse.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
 $schema: https://json-schema.org/draft/2020-12/schema
 type: object
 description: A `beaconErrorResponse` denotes an unsuccessful operation, e.g. due to

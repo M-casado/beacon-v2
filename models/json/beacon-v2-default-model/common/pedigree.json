@@ -65,7 +65,7 @@
                     "type": "string"
                 },
                 "role": {
-                    "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json",
+                    "$ref": "../../../../framework/json/common/ontologyTerm.json",
                     "description": "Pedigree role, defined as relationship to proband. Value from Family Member term (NCIT:C41256), e.g. \"proband\" (NCIT:C64435),\"identical twin\" (NCIT:C73429), \"mother\" (NCIT:C25189).",
                     "examples": [
                         {
@@ -95,7 +95,7 @@
             "type": "object"
         }
     },
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/pedigree.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/common/pedigree.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "description": "Pedigree studies in which the individual is part of.",

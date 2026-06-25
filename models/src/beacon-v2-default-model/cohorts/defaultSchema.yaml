@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/cohorts/defaultSchema.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/cohorts/defaultSchema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 $comment: 'version: ga4gh-beacon-cohort-v2.0.0'
 description: A cohort available in the beacon.
@@ -20,7 +20,7 @@ properties:
       (which may specify how and what kinds of data will be gathered) that are executed
       as part of an investigation and is realized during a study design execution.
       Value from Ontologized MIABIS (OMIABIS) Study design ontology term tree (OBI:0500000).
-    $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+    $ref: ../../../../framework/json/common/ontologyTerm.json
     examples:
     - id: OMIABIS:0001017
       label: case control study design
@@ -202,7 +202,7 @@ $defs:
       Ontology (GeCKO) or others when GeCKO is not applicable.
     type: array
     items:
-      $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+      $ref: ../../../../framework/json/common/ontologyTerm.json
     examples:
     - id: OGMS:0000015
       label: clinical history

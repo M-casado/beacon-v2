@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/endpoints.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/endpoints.json
 openapi: 3.0.2
 servers: []
 info:
@@ -28,7 +28,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../framework/json/responses/beaconErrorResponse.json
   /info:
     parameters:
     - $ref: '#/components/parameters/requestedSchema'
@@ -45,7 +45,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../framework/json/responses/beaconErrorResponse.json
   /service-info:
     get:
       description: Get information about the beacon using GA4GH ServiceInfo format
@@ -58,7 +58,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/ga4gh-service-info-1-0-0-schema.json
+                $ref: ../../../framework/json/responses/ga4gh-service-info-1-0-0-schema.json
   /configuration:
     get:
       description: TBD
@@ -72,13 +72,13 @@ paths:
             application/json:
               schema:
                 description: Response of a request for information about a Beacon
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconConfigurationResponse.json
+                $ref: ../../../framework/json/responses/beaconConfigurationResponse.json
         default:
           description: An unsuccessful operation
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../framework/json/responses/beaconErrorResponse.json
   /entry_types:
     get:
       description: TBD
@@ -93,13 +93,13 @@ paths:
             application/json:
               schema:
                 description: Response of a request for information about a Beacon
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconEntryTypesResponse.json
+                $ref: ../../../framework/json/responses/beaconEntryTypesResponse.json
         default:
           description: An unsuccessful operation
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../framework/json/responses/beaconErrorResponse.json
   /map:
     get:
       description: TBD
@@ -114,13 +114,13 @@ paths:
             application/json:
               schema:
                 description: Response of a request for information about a Beacon
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconMapResponse.json
+                $ref: ../../../framework/json/responses/beaconMapResponse.json
         default:
           description: An unsuccessful operation
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../framework/json/responses/beaconErrorResponse.json
   /filtering_terms:
     parameters:
     - $ref: '#/components/parameters/skip'
@@ -136,13 +136,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconFilteringTermsResponse.json
+                $ref: ../../../framework/json/responses/beaconFilteringTermsResponse.json
         default:
           description: An unsuccessful operation
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../framework/json/responses/beaconErrorResponse.json
 components:
   responses:
     infoOKResponse:
@@ -151,7 +151,7 @@ components:
         application/json:
           schema:
             description: Response of a request for information about a Beacon
-            $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconInfoResponse.json
+            $ref: ../../../framework/json/responses/beaconInfoResponse.json
   parameters:
     requestedSchema:
       name: requestedSchema
@@ -166,9 +166,9 @@ components:
       name: skip
       in: query
       schema:
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/$defs/Skip
+        $ref: ../../../framework/json/common/beaconCommonComponents.json#/$defs/Skip
     limit:
       name: limit
       in: query
       schema:
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/$defs/Limit
+        $ref: ../../../framework/json/common/beaconCommonComponents.json#/$defs/Limit

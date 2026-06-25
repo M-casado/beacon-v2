@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/ontologyTerm.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/common/ontologyTerm.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Ontology Term
 description: Definition of an ontology term.

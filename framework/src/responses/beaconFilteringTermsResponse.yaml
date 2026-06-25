@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/beaconFilteringTermsResponse.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/beaconFilteringTermsResponse.json
 $schema: https://json-schema.org/draft/2020-12/schema
 type: object
 description: The filtering terms response provides information about available individual

@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/entryTypeDefinition.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/configuration/entryTypeDefinition.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: ''
 description: Definition of an element or scope of the element, to describe each type

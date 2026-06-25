@@ -6,7 +6,7 @@
                     "description": "Data Use Ontology codes and additional information associated with a data object (e.g. sample, dataset)."
                 },
                 {
-                    "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json"
+                    "$ref": "../../../../framework/json/common/ontologyTerm.json"
                 },
                 {
                     "properties": {
@@ -21,7 +21,7 @@
                                 }
                             ],
                             "items": {
-                                "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json"
+                                "$ref": "../../../../framework/json/common/ontologyTerm.json"
                             },
                             "type": "array"
                         },
@@ -58,7 +58,7 @@
             ]
         }
     },
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/dataUseConditions.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/common/dataUseConditions.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "description": "Data use conditions",

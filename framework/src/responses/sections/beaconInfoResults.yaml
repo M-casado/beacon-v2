@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconInfoResults.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/sections/beaconInfoResults.json
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Metadata describing a Beacon instance.
 type: object

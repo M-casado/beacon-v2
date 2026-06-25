@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/timeElement.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/common/timeElement.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: TimeElement
 description: |-
@@ -15,4 +15,4 @@ oneOf:
 - $ref: ./gestationalAge.yaml
 - $ref: ./commonDefinitions.yaml#/$defs/Timestamp
 - $ref: ./timeInterval.yaml
-- $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+- $ref: ../../../../framework/json/common/ontologyTerm.json

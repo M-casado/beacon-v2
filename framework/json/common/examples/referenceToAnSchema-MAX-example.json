@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/examples/referenceToAnSchema-MAX-example.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/common/examples/referenceToAnSchema-MAX-example.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "A longer textual description for the element.",
     "id": "RTAEex1",

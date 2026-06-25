@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/endpoints.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/endpoints.json",
     "components": {
         "parameters": {
             "limit": {

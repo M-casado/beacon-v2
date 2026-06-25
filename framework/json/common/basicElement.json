@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/basicElement.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/common/basicElement.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "description": "Definition of the basic element, which is root for most other objects.",

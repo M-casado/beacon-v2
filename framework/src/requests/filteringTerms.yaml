@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/requests/filteringTerms.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/requests/filteringTerms.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Filtering Term Element
 description: 'Filtering terms are the main means to select subsets of records from

@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/examples-fullDocuments/beaconConfigurationResponse-example.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/examples-fullDocuments/beaconConfigurationResponse-example.json
 $schema: https://json-schema.org/draft/2020-12/schema
 meta:
   beaconId: string
@@ -7,7 +7,7 @@ meta:
   - entityType: info
     schema: beacon-map-v2.0.0
 response:
-  $schema: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/configuration/beaconConfigurationSchema.json
+  $schema: ../../../json/configuration/beaconConfigurationSchema.json
   maturityAttributes:
     productionStatus: DEV
   securityAttributes:

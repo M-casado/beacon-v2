@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/requests/beaconRequestMeta.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/requests/beaconRequestMeta.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Meta section of the Beacon request. It includes request context details relevant for the Beacon server when processing the request.",
     "properties": {

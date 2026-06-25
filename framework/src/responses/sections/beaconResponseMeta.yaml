@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconResponseMeta.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/sections/beaconResponseMeta.json
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Information about the response that could be relevant for the Beacon
   client in order to interpret the results.

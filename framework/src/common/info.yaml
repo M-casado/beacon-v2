@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/common/info.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/common/info.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Info
 description: Placeholder to allow the Beacon to return any additional information

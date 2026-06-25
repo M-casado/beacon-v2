@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconResultsets.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/sections/beaconResultsets.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Beacon ResultSet
 description: Sets of results to be returned as query response.

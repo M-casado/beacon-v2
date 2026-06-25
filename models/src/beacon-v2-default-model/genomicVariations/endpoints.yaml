@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/genomicVariations/endpoints.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/genomicVariations/endpoints.json
 openapi: 3.0.2
 servers: []
 info:
@@ -38,7 +38,7 @@ paths:
         '200':
           $ref: '#/components/responses/ResultsOKResponse'
         default:
-          $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+          $ref: ../../../../framework/json/responses/beaconErrorResponse.json
     post:
       description: Get a Beacon response for genomic variations
       operationId: postGenomicVariationsRequest
@@ -48,7 +48,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/requests/beaconRequestBody.json
+              $ref: ../../../../framework/json/requests/beaconRequestBody.json
         required: true
       responses:
         '200':
@@ -58,7 +58,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
   /g_variants/{id}:
     parameters:
     - $ref: '#/components/parameters/entryId'
@@ -76,7 +76,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
     post:
       description: Get details about one genomic variation, identified by its (unique)
         'id'
@@ -87,7 +87,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/requests/beaconRequestBody.json
+              $ref: ../../../../framework/json/requests/beaconRequestBody.json
         required: true
       responses:
         '200':
@@ -97,7 +97,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
   /g_variants/{id}/biosamples:
     parameters:
     - $ref: '#/components/parameters/entryId'
@@ -119,7 +119,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
     post:
       description: Get a *biosamples* response from one genomic variant, identified
         by its (unique) 'id'
@@ -130,7 +130,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/requests/beaconRequestBody.json
+              $ref: ../../../../framework/json/requests/beaconRequestBody.json
         required: true
       responses:
         '200':
@@ -140,7 +140,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
   /g_variants/{id}/individuals:
     parameters:
     - $ref: '#/components/parameters/entryId'
@@ -162,7 +162,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
     post:
       description: Get an *individuals* response from one genomic variant, identified
         by its (unique) 'id'
@@ -173,7 +173,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/requests/beaconRequestBody.json
+              $ref: ../../../../framework/json/requests/beaconRequestBody.json
         required: true
       responses:
         '200':
@@ -183,7 +183,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconErrorResponse.json
+                $ref: ../../../../framework/json/responses/beaconErrorResponse.json
 components:
   responses:
     ResultsOKResponse:
@@ -192,9 +192,9 @@ components:
         application/json:
           schema:
             oneOf:
-            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconBooleanResponse.json
-            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconCountResponse.json
-            - $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
+            - $ref: ../../../../framework/json/responses/beaconBooleanResponse.json
+            - $ref: ../../../../framework/json/responses/beaconCountResponse.json
+            - $ref: ../../../../framework/json/responses/beaconResultsetsResponse.json
   parameters:
     requestedSchema:
       name: requestedSchema
@@ -209,17 +209,17 @@ components:
       name: skip
       in: query
       schema:
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/$defs/Skip
+        $ref: ../../../../framework/json/common/beaconCommonComponents.json#/$defs/Skip
     limit:
       name: limit
       in: query
       schema:
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/$defs/Limit
+        $ref: ../../../../framework/json/common/beaconCommonComponents.json#/$defs/Limit
     includeResultsetResponses:
       name: includeResultsetResponses
       in: query
       schema:
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/$defs/IncludeResultsetResponses
+        $ref: ../../../../framework/json/common/beaconCommonComponents.json#/$defs/IncludeResultsetResponses
     entryId:
       name: id
       in: path

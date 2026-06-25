@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/genomicVariations/requestParameters.json",
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/genomicVariations/requestParameters.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "g_variant": {
         "properties": {

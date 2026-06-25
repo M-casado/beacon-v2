@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/beaconResultsetsResponse.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/beaconResultsetsResponse.json
 $schema: https://json-schema.org/draft/2020-12/schema
 description: 'A `beaconResultsetsResponse` returns the results of a query against
   a beacon or beacon aggregator. Beyond the `responseSummary` for overall matches

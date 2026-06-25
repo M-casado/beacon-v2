@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/endpoints.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/endpoints.json
 openapi: 3.0.2
 servers: []
 info:

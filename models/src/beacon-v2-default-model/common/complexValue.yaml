@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/common/complexValue.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/common/complexValue.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Complex Value
 description: 'Definition of a complex value class. Provenance: GA4GH Phenopackets
@@ -18,7 +18,7 @@ $defs:
       quantityType:
         description: OntologyClass to describe the type of the measurement. Renamed
           compared to GA4GH Phenopackets v2 `ComplexValue.TypedQuantity.type`
-        $ref: https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/ontologyTerm.json
+        $ref: ../../../../framework/json/common/ontologyTerm.json
         example:
           id: NCIT:C25298
           label: Systolic Blood Pressure

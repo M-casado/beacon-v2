@@ -1,4 +1,4 @@
-$id: https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/ga4gh-service-info-1-0-0-schema.json
+$id: https://raw.githubusercontent.com/M-casado/beacon-v2/main/framework/json/responses/ga4gh-service-info-1-0-0-schema.json
 $schema: https://json-schema.org/draft/2020-12/schema
 title: GA4GH service-info API specification
 description: A way for a service to describe basic metadata concerning a service alongside
