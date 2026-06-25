@@ -237,4 +237,3 @@ required:
 - id
 - name
 - cohortType
-additionalProperties: true
