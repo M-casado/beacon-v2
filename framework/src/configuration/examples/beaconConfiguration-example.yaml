@@ -27,7 +27,6 @@ entryTypes:
     - id: exampleEntry
       name: Example entries
     endpoint: /datasets
-    filteringTermsReference: ./datasets/filteringTerms.json
     additionallySupportedSchemas: []
     nonFilteredQueriesAllowed: true
   exampleEntry:
@@ -44,6 +43,5 @@ entryTypes:
       referenceToSchemaDefinition: ./exampleEntry/defaultSchema.json
       schemaVersion: v.2
     endpoint: ./exampleEntries
-    filteringTermsReference: ./exampleEntry/filteringTerms.json
     additionallySupportedSchemas: []
     nonFilteredQueriesAllowed: false

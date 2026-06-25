@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/models/json/beacon-v2-default-model/analyses/endpoints.json",
     "components": {
         "parameters": {
             "entryId": {
@@ -30,7 +31,7 @@
                 "in": "query",
                 "name": "includeResultsetResponses",
                 "schema": {
-                    "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/definitions/IncludeResultsetResponses"
+                    "$ref": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-v2/main/framework/json/common/beaconCommonComponents.json#/$defs/IncludeResultsetResponses"
                 }
             },
             "limit": {

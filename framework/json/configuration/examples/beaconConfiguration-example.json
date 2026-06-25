@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/examples/beaconConfiguration-example.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "entryTypes": {
         "dataset": {
@@ -17,7 +18,6 @@
             },
             "description": "A Dataset is a collection of records, like rows in a database or cards in a cardholder.",
             "endpoint": "/datasets",
-            "filteringTermsReference": "./datasets/filteringTerms.json",
             "id": "dataset",
             "name": "Dataset",
             "nonFilteredQueriesAllowed": true,
@@ -37,7 +37,6 @@
             },
             "description": "A generic entry type to allow testing and playing with the specification.",
             "endpoint": "./exampleEntries",
-            "filteringTermsReference": "./exampleEntry/filteringTerms.json",
             "id": "exampleEntry",
             "name": "Example Entry",
             "nonFilteredQueriesAllowed": false,

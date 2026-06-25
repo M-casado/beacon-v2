@@ -17,7 +17,6 @@ aCollectionOf:
 - id: exampleEntry
   name: Example entries
 endpoint: /datasets
-filteringTermsReference: ./datasets/filteringTerms.json
 additionallySupportedSchemas:
 - id: ohdsi-atlas-cohort
   name: OHDSI ATLAS Cohort

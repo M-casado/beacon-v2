@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/beaconConfigurationResponse.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "description": "The `beaconConfigurationResponse` returns information about configuration parameters of a given beacon instance such as maturity or security attributes or supported entry types. It is directed towards Beacon clients like web pages or network aggregators.",

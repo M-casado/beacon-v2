@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/configuration/examples/entriesCollectionDefinition_example.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "aCollectionOf": [
         {
@@ -23,7 +24,6 @@
     },
     "description": "A Dataset is a collection of records, like rows in a database or cards in a cardholder.",
     "endpoint": "/datasets",
-    "filteringTermsReference": "./datasets/filteringTerms.json",
     "id": "dataset",
     "name": "Dataset",
     "ontologyTermForThisType": {

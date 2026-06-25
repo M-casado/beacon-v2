@@ -1,6 +1,6 @@
 {
     "$defs": {
-        "FilteringTerm": {
+        "FilteringTermInResponse": {
             "description": "Entities can be filtered using this term.",
             "properties": {
                 "id": {
@@ -123,13 +123,14 @@
             "type": "object"
         }
     },
+    "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/biovalidator-test/framework/json/responses/sections/beaconFilteringTermsResults.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "description": "Filtering terms and ontology resources utilised in this Beacon.",
     "properties": {
         "filteringTerms": {
             "items": {
-                "$ref": "#/$defs/FilteringTerm"
+                "$ref": "#/$defs/FilteringTermInResponse"
             },
             "type": "array"
         },
