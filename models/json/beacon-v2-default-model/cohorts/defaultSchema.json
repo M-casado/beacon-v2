@@ -208,6 +208,7 @@
     },
     "$id": "https://raw.githubusercontent.com/M-casado/beacon-v2/main/models/json/beacon-v2-default-model/cohorts/defaultSchema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": true,
     "description": "A cohort available in the beacon.",
     "properties": {
         "cohortDataTypes": {
