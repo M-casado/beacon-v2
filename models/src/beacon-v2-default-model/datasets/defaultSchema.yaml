@@ -39,12 +39,13 @@ properties:
     description: URL to an external system providing more dataset information (RFC
       3986 format).
     examples:
-    - https://example.org/wiki/Main_Page
-  info:
-    $ref: ../common/info.yaml
+      - https://example.org/wiki/Main_Page
   dataUseConditions:
     description: Data use conditions applying to this dataset.
     $ref: ../common/dataUseConditions.yaml
+  info:
+    $ref: ../common/info.yaml
+
 required:
 - id
 - name
